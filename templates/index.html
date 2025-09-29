@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Support Agentic AI</title>
+</head>
+<body>
+    <h1>Customer Support Assistant</h1>
+
+    <form method="post">
+        <textarea name="query" placeholder="Enter your query..." rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    {% if response %}
+        <h2>Response:</h2>
+        <p>{{ response }}</p>
+    {% endif %}
+
+    {% if error %}
+        <h3 style="color:red;">{{ error }}</h3>
+    {% endif %}
+</body>
+</html>
